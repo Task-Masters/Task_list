@@ -1,0 +1,21 @@
+Notes on project:
+
+	Database:
+		_itemID: int, autoinc, not null, unique, primary key
+		_itemName: char, not null
+		_itemDone: int, not null (internal 0==false or not done, 1==true or done)
+
+	TaskRunner errors:
+		1. cannot find main:
+		2. cannot find splashscreen: the splash screen image needs to be added to the res -> drawable folder
+		3. cannot find myListView: this is where the lists would be of tasks
+		4. cannot find dbtaskHandler.getData:
+		5. cannot find row: this is the rows in the listview
+		6. cannot find TaskText: this is the text in the row
+
+	To be added:
+		1. Layouts: needs the activity_tasks edited, needs a main.xml, needs a row.xml
+		2. Onclick in regards to list: needs to be set to change the done from a 0 to a 1 or vice versa
+		3. The default views I chose for this one includes a menu in the corner and a "+" in the bottom right. I think the menu should be a way to switch between the 2 views and the plus should be an onlclick to add item.
+
+Final Note: the code I created is for loading the database into the views and displaying the 2 default values, what we now need to do is create the splash screen and views, a way to add an item to the database, and a way to change one value of the database on click and refersh the screen after the click to show that it moved.
